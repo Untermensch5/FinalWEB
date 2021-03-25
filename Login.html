@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+   <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/Registration.css">
+   <link rel="stylesheet" type="text/css" href="CSS/Security.css">
+   <link rel="stylesheet" type="text/css" href="CSS/Newstyle.css">
+   <link rel="stylesheet" type="text/css" href="CSS/Advice.css">
+   <link rel="stylesheet" href="../style/fontawesome-free/css/all.min.css">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<script src="../script/jquery-3.5.0.js"></script>
+  	<script src="../script/login.js"></script>
+</head>
+<body>
+<div id="obshidiv" class="fixed">
+      <div id="header">
+         <div class="headbox1">
+         <img src="Images/logo.png" id="logo"><h1>SALUTEM</h1>
+         </div>
+         <div class="headbox1" id="extraheadbox1">
+            <a href="#" class="naviglink"></a>
+             <a href="Salutem.html" class="naviglink">About us</a>
+            <a href="#contact" class="naviglink">Contact</a>
+            <a href="Account.html" class="naviglink">Account</a>
+            <a href="#" class="naviglink"></a>
+         </div>
+         <div class="extraheadbox2">
+            <br>
+             <a href="Salutem.html" class="naviglink">About us</a><br>
+            <a href="#contact" class="naviglink">Contact</a><br>
+            <a href="#" class="naviglink">Decision</a><br>
+            <br>
+         </div>
+         <div class="headbox1 selectclass">
+            <a href="Register.html" class="headregis">Registration</a>
+         </div>
+         <div  id="extramenu">
+            <a href="#" class="naviglink"><i class="fas fa-align-justify"></i></a><br><br>
+                <div id="submenu">
+                  <a href="@" class="clickbtn">Main</a>
+                    <a href="#contact" class="clickbtn">Contact</a>
+                  <a href="#"><hr></a>
+                  <a href="Security.html" class="clickbtn">Security</a>
+                  <a href="error.html" class="clickbtn">Error </a>
+                  <a href="advice.html" class="clickbtn">Advice</a>
+                  <a href="Plugin.html" class="clickbtn">Plugin</a>
+                  <a href="#"><hr></a>
+                  <a href="login.html" class="clickbtn">Login</a>
+                    <a href="Register.html" class="clickbtn">Registration</a>
+               </div>
+         </div>
+      </div>
+   </div>
+	<div id="boxx">
+	<h1 id="idforh1" align="center">Login</h1>
+		<form>
+		<table>
+			<tbody>
+				<tr>
+					<td><label for="username" class="username">Username</label></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="username1" id="usernameLogin" placeholder="username..."></td>
+				</tr>
+				<tr>
+					<td><label for="password" class="password">Password</label></td>
+				</tr>
+				<tr>
+					<td><input type="password" id="passwordLogin" name="userPassword" placeholder="password..."></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button type="button" id="knopka">Sign in</button>
+	</form>
+</div>
+<div id="footer">
+	<div class="box" id="contact">
+		<p>
+			Salutem. We will take care of your safet<br>
+			&copy;2021. All rights reserved <br>
+		</p>
+	</div>
+	<div class="box">
+		<p>University: AITU</p>
+		<p>Teacher: Rasul Kairgeldin</p>
+		<p>Group: BD-2002</p>
+		<p>Student: Kurmanbekuly Ersultan, Ardak Nurseit</p>
+	</div>
+	<div class="box">
+		<div id="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A74289caa8d6ea8c609cd3978683b75ef595bfd0f1b1ce012db831a874611be4e&amp;width=594&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+		</div>
+	</div>
+</div>
+		</div>
+<!--<script>
+	function Local() {
+		var username = document.querySelector("#username").value;
+		console.log(username);
+		var password = document.querySelector("#password").value;
+		console.log(password);
+		var rePassword = document.querySelector("#repassword").value;
+		console.log(rePassword);
+		var mail = document.querySelector("#mail").value;
+		console.log(mail);
+		var firstName = document.querySelector("#FirstName").value;
+		console.log(firstName);
+		var SecondName = document.querySelector("#SecondName").value;
+		console.log(SecondName);
+		var z = 7;
+		if (true) {
+			if (username == "") {
+				document.querySelector(".username").innerHTML= "Fill this pls";
+				z--;
+			}
+			if (password == "") {
+				document.querySelector(".password").innerHTML= "Fill this pls";
+				z--;
+			}
+			if (repassword == "") {
+				document.querySelector(".rePassword").innerHTML= "Fill this pls";
+				z--;
+			}
+			if (mail == "") {
+				document.querySelector(".email").innerHTML= "Fill this pls";
+				z--;
+			}
+			if (firstName == "") {
+				document.querySelector(".firstName").innerHTML= "Fill this pls";
+				z--;
+			}
+			if (SecondName == "") {
+				document.querySelector(".SecondName").innerHTML= "Fill this pls";
+				z--;
+			}
+			if (password != rePassword) {
+				document.querySelector(".repassword").innerHTML= "Passwords are not same";
+				z--;
+			}
+		}
+		if (z<7) {
+			alert('fill all pls');
+			z=7;
+		}
+		else{
+			localStorage.setItem("username", username);
+			localStorage.setItem("password",password);
+			localStorage.setItem("mail",mail);
+			localStorage.setItem("firstName",firstName);
+			localStorage.setItem("SecondName",SecondName);
+		}
+
+	}
+	function Check(){
+		var a = document.querySelector("#username123").value;
+		var b = document.querySelector("#password123").value;
+		if (a != localStorage.getItem("username")|| b!= localStorage.getItem("password")) {
+			alert("UserName or password is not valid");
+		}
+		else{
+			alert("everything is ok");
+		}
+
+	}
+</script>-->
+</body>
+</html>

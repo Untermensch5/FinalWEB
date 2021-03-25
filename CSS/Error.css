@@ -1,0 +1,49 @@
+body{
+	background-color: white;
+}
+*{
+	margin: 0 auto;
+	transition: all .2s;
+}
+.imgforvirus{
+	max-width: 300px;
+	border-radius: 10px;
+	margin: 10px;
+	border-left: 5px solid #00d49d;
+	align-self: center;
+}
+.step{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+p{
+	color: silver;
+}
+.context{
+	align-self: center;
+}
+.listviruses{
+	display: grid;
+	overflow: hidden;
+	grid-template-columns: repeat(5,1fr);
+	background-color: #3f395f;
+	border-radius: 7px;
+	border-left: 5px solid #00d49d;
+	border-right: 5px solid #00d49d;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0,.7);
+	padding: 10px;
+	margin-top: 20px;
+}
+.listviruses a:hover{
+	text-decoration: underline;
+	color: white;
+}
+.video{
+	border-left: 5px solid #00d49d;
+	border-right: 5px solid #00d49d;
+}
+
+
+
+
+

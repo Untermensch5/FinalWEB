@@ -1,0 +1,164 @@
+body{
+	background-color: white;
+}
+*{
+	margin: 0 auto;
+	transition: all .2s;
+}
+/* .mainconteiner{
+	height: 150px;
+} */
+.fa-align-justify{
+	font-size: 20px;
+}
+.fa-align-justify:hover{
+	transform:rotate(180deg);
+	color: #00d49d;
+	font-size: 25px;
+}
+#extramenu{
+	text-align: left;
+	margin-left: 5px;
+}
+#extramenu div a{
+	display: none;
+}
+#extramenu:hover div a{
+	display: block;
+}
+#submenu{
+	display: block;
+}
+/* .box2{
+} */
+.box3{
+	width: 100%;
+}
+.boxxes{
+	width: 100%;
+}
+.video{
+	border-radius: 10px;
+    max-width:560px;
+	max-height:315px;
+	border-left: 5px solid #00d49d;
+	border-right: 5px solid #00d49d;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0,.7);
+}
+.imageOS{
+	max-width: 400px;
+	border-radius: 10px;
+}
+.antivirus{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	background-color: #3f395f;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	transition: 0.1s;
+	border-left: 5px solid #00d49d;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0,.7);
+	margin: 20px 0 20px 0;
+}
+.textantivius{
+	align-self: center; 
+}
+.imgantivirus{
+	max-width: 100px;
+}
+ul{
+	list-style-type: none;
+}
+.fa-check{
+	color: #00d49d;
+}
+.clickbtn{
+	background-color:#00d49d;
+	color: white;
+	border-radius: 7px;
+	padding: 20px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0,.7);
+	border-bottom: 2px solid #14af87;
+}
+.clickbtn:hover{
+	padding: 23px;
+	background-color: #14af87; 
+}
+
+
+
+
+
+@media (min-width: 300px){
+.clickbtn{
+	padding: 10px;
+	font-size: 15px;
+}
+.imageOS{
+	max-width: 200px;
+}
+.video{
+	max-width:260px;
+	max-height:185px;
+}
+.antivirus{
+	grid-template-columns: 1fr;
+}
+.textantivius{
+	margin: 10px;
+}
+}
+@media(min-width: 576px){
+.video{
+	max-width:460px;
+	max-height:215px;
+}
+.antivirus{
+	grid-template-columns: 1fr 2fr 1fr; 
+}
+.textantivius{
+	margin: 0;
+}
+#footer{
+	width: 96.5%;
+}
+}
+@media(min-width: 768px){
+#extramenu{
+	display: none;
+}
+.imageOS{
+	max-width: 400px;
+}
+.clickbtn{
+	padding: 15px;
+	font-size: 15px;
+}
+
+#mainconteiner{
+	align-items: center;
+	margin-left:80px;
+
+}
+#footer{
+	width: 97%;
+}
+.video{
+	max-width:560px;
+	max-height:315px;
+}
+}
+@media(min-width: 992px){
+.clickbtn{
+	padding: 20px;
+	font-size: 20px;
+}
+#mainconteiner{
+	align-items: center;
+	margin-left: 0;
+}
+}
+@media(min-width: 1200px){
+
+}

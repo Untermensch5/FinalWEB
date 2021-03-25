@@ -1,0 +1,33 @@
+body{
+	background-color: white;
+}
+*{
+	margin: 0 auto;
+	transition: all .2s;
+}
+.steper{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+@media (min-width: 300px){
+.steper{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 2em;
+}
+
+}
+@media(min-width: 576px){
+}
+@media(min-width: 768px){
+.steper{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+}
+@media(min-width: 992px){
+}
+@media(min-width: 1200px){
+
+}
